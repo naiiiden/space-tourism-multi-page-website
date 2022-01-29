@@ -56,6 +56,13 @@ body {
   }
 }
 
+a {
+  color: white;
+  font-family: Barlow Condensed, sans-serif;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 767px) {
   header {
     padding: 1.5rem;
@@ -112,10 +119,6 @@ body {
     letter-spacing: 4px;
   }
   header nav .nav-ul a {
-    color: white;
-    font-family: Barlow Condensed, sans-serif;
-    letter-spacing: 2.7px;
-    text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -131,6 +134,92 @@ body {
     right: 0;
     -webkit-transition: .3s;
     transition: .3s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logo {
+    padding: 0 1.5rem;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header nav .nav-ul {
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(2rem);
+            backdrop-filter: blur(2rem);
+    padding: 0 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  header nav .nav-ul li:nth-of-type(1) {
+    border-bottom: 2px solid white;
+  }
+  header nav .nav-ul a {
+    height: 69px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  header nav .nav-ul a span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .logo {
+    padding: 3rem;
+  }
+  header nav .nav-ul {
+    gap: 4rem;
+    padding-left: 9rem;
+    padding-right: 6rem;
+  }
+  header nav .nav-ul li {
+    border-bottom: 2px solid transparent;
+  }
+  header nav .nav-ul li:hover:nth-of-type(n+2) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  header nav .nav-ul li:hover:nth-of-type(n+2) a {
+    color: #d2d8f9;
+  }
+  header nav .nav-ul a {
+    height: 80px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: .5rem;
+  }
+  header nav .nav-ul a span {
+    display: block;
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=style.css.map */
