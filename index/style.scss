@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Bellefair&display=swap');
+
+$dark-blue: hsl(230, 33%, 7%);
+$light-gray: hsl(231, 76%, 90%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: Bellefair, sans-serif;
+    font-size: 150px;
+}
+
+h2 {
+    font-family: Bellefair, sans-serif;
+    font-size: 100px;
+}
+
+h3 {
+    font-family: Bellefair, sans-serif;
+    font-size: 56px;
+}
+
+h4 {
+    font-family: Bellefair, sans-serif;
+    font-size: 32px;
+}
+
+/*BACKGROUND*/
+body {
+    background: url("../starter-code/assets/home/background-home-mobile.jpg") no-repeat;
+    background-size: 100vw 100vh; 
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: url("../starter-code/assets/home/background-home-tablet.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: url("../starter-code/assets/home/background-home-desktop.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+}
+
+
+@import "./header";
