@@ -1,7 +1,6 @@
 main {
     padding: 0 1.5rem;
     text-align: center;
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -42,11 +41,11 @@ main {
     }
 
     .explore {
+        margin-top: 1.5rem;
         border: none;
         border-radius: 50%;
         width: 150px;
         height: 150px;
-
         font-family: Bellefair, sans-serif;
         font-size: 20px;
         letter-spacing: 1.25px;
@@ -56,11 +55,6 @@ main {
 @media screen and (min-width: 768px) {
     main {
         padding: 3rem;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 5%;
-        z-index: -1;
 
         h1 {
             span {
@@ -81,18 +75,20 @@ main {
 
         .button_hover {
             margin-top: 3rem;
+
+            .explore {
+                margin-top: 0;
+            }
         }
     }
 }
 
 @media screen and (min-width: 1024px) {
     main {
-        top: 0;
         text-align: start;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-around;
-        height: 100vh;
 
         .vertical_align {
             width: 100%;
@@ -129,7 +125,6 @@ main {
         }
 
         .button_hover {
-            // margin-top: 0;
             align-self: flex-end;
             display: grid;
             place-content: center;

@@ -8,7 +8,7 @@
 
 body {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 img {
@@ -39,20 +39,20 @@ h4 {
 /*BACKGROUND*/
 body {
   background: url("../starter-code/assets/home/background-home-mobile.jpg") no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
 }
 
 @media screen and (min-width: 768px) {
   body {
     background: url("../starter-code/assets/home/background-home-tablet.jpg") no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 100% 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   body {
     background: url("../starter-code/assets/home/background-home-desktop.jpg") no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 100% 100%;
   }
 }
 
@@ -148,6 +148,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    z-index: 99;
   }
   header .logo {
     padding: 0 1.5rem;
@@ -226,7 +227,6 @@ a {
 main {
   padding: 0 1.5rem;
   text-align: center;
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,6 +287,7 @@ main p {
 }
 
 main .explore {
+  margin-top: 1.5rem;
   border: none;
   border-radius: 50%;
   width: 150px;
@@ -299,11 +300,6 @@ main .explore {
 @media screen and (min-width: 768px) {
   main {
     padding: 3rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 5%;
-    z-index: -1;
   }
   main h1 {
     font-size: 150px;
@@ -323,11 +319,13 @@ main .explore {
   main .button_hover {
     margin-top: 3rem;
   }
+  main .button_hover .explore {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   main {
-    top: 0;
     text-align: start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -338,7 +336,6 @@ main .explore {
             align-items: flex-end;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 100vh;
   }
   main .vertical_align {
     width: 100%;
