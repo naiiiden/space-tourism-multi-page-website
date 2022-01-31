@@ -24,14 +24,14 @@
     </header>
     <main>
         <h2><span>01</span>PICK YOUR DESTINATION</h2>
-        <section class="slide">
+        <section class="destinationSlide">
             <img src="starter-code/assets/destination/image-moon.webp" alt="moon">
             <div class="desktop_column">
                 <div class="buttons_container">
-                    <span aria-label="information about the Moon">MOON</span>
-                    <span aria-label="information about Mars">MARS</span>
-                    <span aria-label="information about Europa">EUROPA</span>
-                    <span aria-label="information about Titan">TITAN</span>
+                    <span class="destButton" aria-label="information about the Moon" onclick="destCurrentSlide(1)">MOON</span>
+                    <span class="destButton" aria-label="information about Mars" onclick="destCurrentSlide(2)">MARS</span>
+                    <span class="destButton" aria-label="information about Europa" onclick="destCurrentSlide(3)">EUROPA</span>
+                    <span class="destButton" aria-label="information about Titan" onclick="destCurrentSlide(4)">TITAN</span>
                 </div>
                 <div class="text_container">
                     <h1>MOON</h1>
@@ -52,6 +52,91 @@
                 </div>
             </div>
         </section>
+
+        <section class="destinationSlide">
+            <img src="starter-code/assets/destination/image-mars.webp" alt="mars">
+            <div class="desktop_column">
+                <div class="buttons_container">
+                    <span class="destButton" aria-label="information about the Moon" onclick="destCurrentSlide(1)">MOON</span>
+                    <span class="destButton" aria-label="information about Mars" onclick="destCurrentSlide(2)">MARS</span>
+                    <span class="destButton" aria-label="information about Europa" onclick="destCurrentSlide(3)">EUROPA</span>
+                    <span class="destButton" aria-label="information about Titan" onclick="destCurrentSlide(4)">TITAN</span>
+                </div>
+                <div class="text_container">
+                    <h1>MARS</h1>
+                    <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+                    the tallest planetary mountain in our solar system. It’s two and a half times 
+                    the size of Everest!</p>
+                </div>
+                <div class="information_container">
+                    <div class="information">
+                        <span class="distance_time">AVG. DISTANCE</span>
+                        <p class="value">225 MIL. KM</p>
+                    </div>
+                    <div class="information">
+                        <span class="distance_time">EST. TRAVEL TIME</span>
+                        <p class="value">9 MONTHS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinationSlide">
+            <img src="starter-code/assets/destination/image-europa.webp" alt="europa">
+            <div class="desktop_column">
+                <div class="buttons_container">
+                    <span class="destButton" aria-label="information about the Moon" onclick="destCurrentSlide(1)">MOON</span>
+                    <span class="destButton" aria-label="information about Mars" onclick="destCurrentSlide(2)">MARS</span>
+                    <span class="destButton" aria-label="information about Europa" onclick="destCurrentSlide(3)">EUROPA</span>
+                    <span class="destButton" aria-label="information about Titan" onclick="destCurrentSlide(4)">TITAN</span>
+                </div>
+                <div class="text_container">
+                    <h1>EUROPA</h1>
+                    <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+                    winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+                    ice skating, curling, hockey, or simple relaxation in your snug 
+                    wintery cabin.</p>
+                </div>
+                <div class="information_container">
+                    <div class="information">
+                        <span class="distance_time">AVG. DISTANCE</span>
+                        <p class="value">628 MIL. KM</p>
+                    </div>
+                    <div class="information">
+                        <span class="distance_time">AVG. DISTANCE</span>
+                        <p class="value">3 YEARS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="destinationSlide">
+            <img src="starter-code/assets/destination/image-titan.webp" alt="titan">
+            <div class="desktop_column">
+                <div class="buttons_container">
+                    <span class="destButton" aria-label="information about the Moon" onclick="destCurrentSlide(1)">MOON</span>
+                    <span class="destButton" aria-label="information about Mars" onclick="destCurrentSlide(2)">MARS</span>
+                    <span class="destButton" aria-label="information about Europa" onclick="destCurrentSlide(3)">EUROPA</span>
+                    <span class="destButton" aria-label="information about Titan" onclick="destCurrentSlide(4)">TITAN</span>
+                </div>
+                <div class="text_container">
+                    <h1>TITAN</h1>
+                    <p>The only moon known to have a dense atmosphere other than Earth, Titan 
+                    is a home away from home (just a few hundred degrees colder!). As a 
+                    bonus, you get striking views of the Rings of Saturn.</p>
+                </div>
+                <div class="information_container">
+                    <div class="information">
+                        <span class="distance_time">AVG. DISTANCE</span>
+                        <p class="value">1.6 BIL. KM</p>
+                    </div>
+                    <div class="information">
+                        <span class="distance_time">EST. TRAVEL TIME</span>
+                        <p class="value">7 YEARS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="destination/script/script.js"></script>
 </body>
