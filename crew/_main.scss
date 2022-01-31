@@ -3,7 +3,7 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 
     h2 {
         span {
@@ -22,35 +22,66 @@ main {
         line-height: 19.2px;
     }
 
+    .dots {
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+
+        .dot {
+            cursor: pointer;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: $white;
+            opacity: .17;
+
+            &:hover {
+                opacity: .4;
+                transition: .2s;
+            }
+        }
+
+        .active {
+            background: $white;
+            opacity: 1;
+            transition: .2s;
+        }
+    }
+
     .crewSlide {
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
 
         img {
             width: 200px;
             border-bottom: 1px solid #383b4b;
         }
 
-        .dots {
-            display: flex;
-            gap: 1rem;
+        // .dots {
+        //     display: flex;
+        //     gap: 1rem;
 
-            .dot {
-                cursor: pointer;
-                border-radius: 50%;
-                width: 10px;
-                height: 10px;
-                background: $white;
-                opacity: .17;
+        //     .dot {
+        //         cursor: pointer;
+        //         border-radius: 50%;
+        //         width: 10px;
+        //         height: 10px;
+        //         background: $white;
+        //         opacity: .17;
 
-                &:hover {
-                    opacity: .4;
-                    transition: .2s;
-                }
-            }
-        }
+        //         &:hover {
+        //             opacity: .4;
+        //             transition: .2s;
+        //         }
+        //     }
+
+        //     .active {
+        //         background: $white;
+        //         opacity: 1;
+        //     }
+        // }
 
         .text_container {
             display: flex;
@@ -76,5 +107,14 @@ main {
                 line-height: 25px;
             }
         }
+    }
+}
+
+.fade {
+    animation: fade 1s;
+    
+    @keyframes fade {
+      from {opacity: 0}
+      to {opacity: 1}
     }
 }

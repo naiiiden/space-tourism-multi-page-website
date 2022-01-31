@@ -232,7 +232,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 main h2 {
@@ -252,6 +252,38 @@ main h2 span {
   opacity: .25;
 }
 
+main .dots {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+main .dots .dot {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  opacity: .17;
+}
+
+main .dots .dot:hover {
+  opacity: .4;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+main .dots .active {
+  background: white;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 main .crewSlide {
   display: none;
   -webkit-box-orient: vertical;
@@ -261,34 +293,12 @@ main .crewSlide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 main .crewSlide img {
   width: 200px;
   border-bottom: 1px solid #383b4b;
-}
-
-main .crewSlide .dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-}
-
-main .crewSlide .dots .dot {
-  cursor: pointer;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background: white;
-  opacity: .17;
-}
-
-main .crewSlide .dots .dot:hover {
-  opacity: .4;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
 main .crewSlide .text_container {
@@ -319,5 +329,28 @@ main .crewSlide .text_container p {
   font-family: Barlow Condensed, sans-serif;
   font-size: 15px;
   line-height: 25px;
+}
+
+.fade {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
