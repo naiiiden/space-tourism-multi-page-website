@@ -223,7 +223,7 @@ a {
 }
 
 main {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,7 +232,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 main h2 {
@@ -293,11 +293,12 @@ main .crewSlide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 main .crewSlide img {
-  width: 200px;
+  width: 270px;
+  height: 368px;
   border-bottom: 1px solid #383b4b;
 }
 
@@ -309,14 +310,14 @@ main .crewSlide .text_container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 main .crewSlide .text_container h1 {
   color: white;
   font-size: 24px;
   font-weight: 400;
-  line-height: 28.34px;
+  line-height: 33.34px;
 }
 
 main .crewSlide .text_container h1 span {
