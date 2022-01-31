@@ -240,7 +240,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 main h2 {
@@ -258,6 +258,42 @@ main h2 span {
   font-weight: 700;
   color: white;
   opacity: .25;
+}
+
+main .buttons_container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+main .buttons_container span {
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  line-height: 16.8px;
+  color: #d2d8f9;
+  padding: 1rem 0;
+  border-bottom: 3px solid transparent;
+}
+
+main .buttons_container span.active {
+  border-bottom: 3px solid white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+main .buttons_container span:hover {
+  border-bottom: 3px solid #d2d8f9;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .destinationSlide {
@@ -286,33 +322,6 @@ main .destinationSlide .desktop_column {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: .5rem;
-}
-
-main .destinationSlide .buttons_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-}
-
-main .destinationSlide .buttons_container span {
-  font-family: Barlow Condensed, sans-serif;
-  font-size: 14px;
-  letter-spacing: 2.36px;
-  line-height: 16.8px;
-  color: #d2d8f9;
-  padding: 1rem 0;
-  border-bottom: 3px solid transparent;
-}
-
-main .destinationSlide .buttons_container span:active {
-  border-bottom: 3px solid white;
 }
 
 main .destinationSlide .text_container {
@@ -379,27 +388,50 @@ main .destinationSlide .information_container .information .value {
   line-height: 32.09px;
 }
 
+.fade {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding: 3rem;
-    gap: 3rem;
+    gap: 1.5rem;
   }
   main h2 {
     text-align: start;
+  }
+  main .buttons_container {
+    gap: 2rem;
+  }
+  main .buttons_container span {
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
   }
   main .destinationSlide {
     gap: 2rem;
   }
   main .destinationSlide img {
     width: 300px;
-  }
-  main .destinationSlide .buttons_container {
-    gap: 2rem;
-  }
-  main .destinationSlide .buttons_container span {
-    font-size: 16px;
-    line-height: 19.2px;
-    letter-spacing: 2.7px;
   }
   main .destinationSlide .text_container {
     padding-bottom: 2rem;
@@ -439,6 +471,11 @@ main .destinationSlide .information_container .information .value {
   main h2 span {
     padding-right: 1rem;
   }
+  main .buttons_container span {
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+  }
   main .destinationSlide {
     text-align: start;
     -webkit-box-orient: horizontal;
@@ -450,16 +487,6 @@ main .destinationSlide .information_container .information .value {
   }
   main .destinationSlide img {
     width: 350px;
-  }
-  main .destinationSlide .buttons_container {
-    margin-left: .5rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  main .destinationSlide .buttons_container span {
-    font-size: 16px;
-    line-height: 19.2px;
-    letter-spacing: 2.7px;
   }
   main .destinationSlide .text_container h1 {
     font-size: 100px;
@@ -479,7 +506,6 @@ main .destinationSlide .information_container .information .value {
 
 @media screen and (min-width: 1440px) {
   main {
-    gap: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;

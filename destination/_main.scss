@@ -3,7 +3,7 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
     h2 {
         span {
@@ -20,6 +20,35 @@ main {
         color: $white;
         letter-spacing: 2.7px;
         line-height: 19.2px;
+    }
+
+    .buttons_container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+            font-family: Barlow Condensed, sans-serif;
+            font-size: 14px;
+            letter-spacing: 2.36px;
+            line-height: 16.8px;
+            color: $light-gray;
+
+            padding: 1rem 0;
+            border-bottom: 3px solid transparent;
+
+            &.active {
+                border-bottom: 3px solid $white;
+                transition: .2s;
+            }
+
+            &:hover {
+                border-bottom: 3px solid $light-gray;
+                transition: .2s;
+            }
+        }
     }
 
     .destinationSlide {
@@ -39,27 +68,31 @@ main {
             gap: .5rem;
         }
 
-        .buttons_container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
+        // .buttons_container {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     gap: 1rem;
 
-            span {
-                font-family: Barlow Condensed, sans-serif;
-                font-size: 14px;
-                letter-spacing: 2.36px;
-                line-height: 16.8px;
-                color: $light-gray;
+        //     span {
+        //         font-family: Barlow Condensed, sans-serif;
+        //         font-size: 14px;
+        //         letter-spacing: 2.36px;
+        //         line-height: 16.8px;
+        //         color: $light-gray;
 
-                padding: 1rem 0;
-                border-bottom: 3px solid transparent;
+        //         padding: 1rem 0;
+        //         border-bottom: 3px solid transparent;
 
-                &:active {
-                    border-bottom: 3px solid $white;
-                }
-            }
-        }
+        //         &.active {
+        //             border-bottom: 3px solid $white;
+        //         }
+
+        //         &:hover {
+        //             border-bottom: 3px solid $light-gray;
+        //         }
+        //     }
+        // }
 
         .text_container {
             display: flex;
@@ -113,13 +146,34 @@ main {
     }
 }
 
+.fade {
+    animation: fade 1s;
+    
+    @keyframes fade {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+}
+  
+
 @media screen and (min-width: 768px) {
     main {
         padding: 3rem;
-        gap: 3rem;
+        gap: 1.5rem;
 
         h2 {
             text-align: start;
+        }
+
+
+        .buttons_container {
+            gap: 2rem;
+
+            span {
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: 2.7px;
+            }
         }
 
         .destinationSlide {
@@ -129,15 +183,15 @@ main {
                 width: 300px;
             }
 
-            .buttons_container {
-                gap: 2rem;
+            // .buttons_container {
+            //     gap: 2rem;
 
-                span {
-                    font-size: 16px;
-                    line-height: 19.2px;
-                    letter-spacing: 2.7px;
-                }
-            }
+            //     span {
+            //         font-size: 16px;
+            //         line-height: 19.2px;
+            //         letter-spacing: 2.7px;
+            //     }
+            // }
 
             .text_container {
                 padding-bottom: 2rem;
@@ -182,6 +236,14 @@ main {
             }
         }
 
+        .buttons_container {
+            span {
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: 2.7px;
+            }
+        }
+
         .destinationSlide {
             text-align: start;
             flex-direction: row;
@@ -191,16 +253,16 @@ main {
                 width: 350px;
             }
 
-            .buttons_container {
-                margin-left: .5rem;
-                align-self: flex-start;
+            // .buttons_container {
+            //     margin-left: .5rem;
+            //     align-self: flex-start;
                 
-                span {
-                    font-size: 16px;
-                    line-height: 19.2px;
-                    letter-spacing: 2.7px;
-                }
-            }
+            //     span {
+            //         font-size: 16px;
+            //         line-height: 19.2px;
+            //         letter-spacing: 2.7px;
+            //     }
+            // }
 
             .text_container {
                 h1 {
@@ -226,7 +288,6 @@ main {
 
 @media screen and (min-width: 1440px) {
     main {
-        gap: 3rem;
         position: absolute;
         top: 50%;
         left: 50%;
