@@ -118,6 +118,9 @@ a {
 
 @media screen and (min-width: 1024px) {
     header {
+        position: relative;
+        z-index: 101;
+
         .logo {
             padding: 3rem;
         }

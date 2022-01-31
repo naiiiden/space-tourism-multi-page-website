@@ -186,6 +186,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    z-index: 101;
+  }
   header .logo {
     padding: 3rem;
   }
@@ -352,6 +356,127 @@ main .crewSlide .text_container p {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 3rem;
+    gap: 1rem;
+  }
+  main .dots {
+    margin-top: .75rem;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main .crewSlide img {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-bottom: none;
+    width: 55%;
+    height: 54%;
+  }
+  main .crewSlide .text_container {
+    gap: 0;
+  }
+  main .crewSlide .text_container h1 {
+    font-size: 40px;
+    line-height: 55.84px;
+  }
+  main .crewSlide .text_container h1 span {
+    font-size: 24px;
+    line-height: 27.5px;
+  }
+  main .crewSlide .text_container p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 458px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main h2 {
+    z-index: 99;
+    font-size: 28px;
+    line-height: 33.6px;
+    letter-spacing: 4.72px;
+  }
+  main .dots {
+    z-index: 99;
+  }
+  main .crewSlide {
+    padding: 0 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: start;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 100vh;
+    z-index: 0;
+  }
+  main .crewSlide .text_container {
+    position: relative;
+    z-index: 2;
+  }
+  main .crewSlide .text_container h1 {
+    font-size: 56px;
+    line-height: 64.18px;
+  }
+  main .crewSlide .text_container h1 span {
+    font-size: 32px;
+    line-height: 36.67px;
+  }
+  main .crewSlide .text_container p {
+    font-size: 18px;
+    line-height: 32px;
+    width: 444px;
+  }
+  main .crewSlide img {
+    padding-right: 3rem;
+    right: 0;
+    bottom: 0;
+    width: 468.07px;
+    height: 712px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main .crewSlide {
+    padding: 0 0 0 9rem;
+  }
+  main .crewSlide img {
+    padding-right: 9rem;
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .crewSlide {
+    padding: 0 11rem;
+  }
+  main .crewSlide img {
+    padding-right: 11rem;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  main .crewSlide {
+    padding: 0 0 0 20rem;
+  }
+  main .crewSlide img {
+    padding-right: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
