@@ -426,6 +426,7 @@ main .destinationSlide .information_container .information .value {
     font-size: 16px;
     line-height: 19.2px;
     letter-spacing: 2.7px;
+    cursor: pointer;
   }
   main .destinationSlide {
     gap: 2rem;
