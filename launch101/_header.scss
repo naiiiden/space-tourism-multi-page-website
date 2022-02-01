@@ -1,0 +1,163 @@
+a {
+    color: $white;
+    font-family: Barlow Condensed, sans-serif;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hamburger {
+            border: none;
+            background: transparent;
+            z-index: 100;
+            position: fixed;
+            right: 0;
+            padding: 1.5rem;
+        }
+
+        nav {
+            .nav-ul {
+                list-style-type: none;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                position: fixed;
+                z-index: 99;
+                right: -999rem;
+                transition: right 3s;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 6rem 0 6rem 2rem;
+                width: 15rem;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(2rem);
+
+                li {
+                    padding: .5rem 0;
+
+                    &:nth-of-type(4) {
+                        border-right: 4px solid $white;
+                    }
+
+                    &:nth-of-type(2) {
+                        span {
+                            letter-spacing: 4px;
+                        }
+                    }
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+
+                &.show {
+                    right: 0;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            padding: 0 1.5rem;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            .nav-ul {
+                list-style-type: none;
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(2rem);
+                padding: 0 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                
+                li:nth-of-type(4) {
+                    border-bottom: 2px solid $white;
+                }
+
+                a {
+                    height: 69px;
+                    display: grid;
+                    place-content: center;
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        position: relative;
+        z-index: 101;
+
+        .logo {
+            padding: 3rem;
+        }
+
+        nav {
+            .nav-ul {
+                gap: 4rem;
+                padding-left: 9rem;
+                padding-right: 6rem;
+
+                li {
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
+                            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                            transition: .1s;
+                        
+                            a {
+                                color: $light-gray;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    height: 80px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+
+                    span {
+                        display: block;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
