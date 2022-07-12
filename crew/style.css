@@ -200,11 +200,13 @@ a {
   }
   header nav .nav-ul li {
     border-bottom: 2px solid transparent;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav .nav-ul li:hover:nth-of-type(1), header nav .nav-ul li:hover:nth-of-type(2), header nav .nav-ul li:hover:nth-of-type(4) {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav .nav-ul li:hover:nth-of-type(1) a, header nav .nav-ul li:hover:nth-of-type(2) a, header nav .nav-ul li:hover:nth-of-type(4) a {
     color: #d2d8f9;
@@ -264,6 +266,8 @@ main .dots {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .dots .dot {
@@ -273,6 +277,8 @@ main .dots .dot {
   height: 10px;
   background: white;
   opacity: .17;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .dots .dot:hover {

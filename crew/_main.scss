@@ -26,6 +26,7 @@ main {
         justify-content: center;
         display: flex;
         gap: 1rem;
+        transition: .2s;
 
         .dot {
             cursor: pointer;
@@ -34,6 +35,7 @@ main {
             height: 10px;
             background: $white;
             opacity: .17;
+            transition: .2s;
 
             &:hover {
                 opacity: .4;
@@ -59,30 +61,6 @@ main {
             height: 368px;
             border-bottom: 1px solid #383b4b;
         }
-
-        // .dots {
-        //     display: flex;
-        //     gap: 1rem;
-
-        //     .dot {
-        //         cursor: pointer;
-        //         border-radius: 50%;
-        //         width: 10px;
-        //         height: 10px;
-        //         background: $white;
-        //         opacity: .17;
-
-        //         &:hover {
-        //             opacity: .4;
-        //             transition: .2s;
-        //         }
-        //     }
-
-        //     .active {
-        //         background: $white;
-        //         opacity: 1;
-        //     }
-        // }
 
         .text_container {
             display: flex;
