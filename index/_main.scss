@@ -132,6 +132,7 @@ main {
             border-radius: 50%;
             width: 375px;
             height: 375px;
+            transition: .2s;
 
             &:hover {
                 background: rgba(71, 71, 71, 0.25);
