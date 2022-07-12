@@ -130,11 +130,12 @@ a {
 
                 li {
                     border-bottom: 2px solid transparent;
+                    transition: .2s;
 
                     &:hover {
                         &:nth-of-type(n+2) {
                             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-                            transition: .1s;
+                            transition: .2s;
                         
                             a {
                                 color: $light-gray;

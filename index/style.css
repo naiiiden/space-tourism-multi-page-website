@@ -198,11 +198,13 @@ a {
   }
   header nav .nav-ul li {
     border-bottom: 2px solid transparent;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav .nav-ul li:hover:nth-of-type(n+2) {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav .nav-ul li:hover:nth-of-type(n+2) a {
     color: #d2d8f9;
