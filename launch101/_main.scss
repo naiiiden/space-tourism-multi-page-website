@@ -179,11 +179,18 @@ main {
                     width: 60px;
                     height: 60px;
                     font-size: 1.25rem;
+                    transition: .2s;
 
                     &:hover {
                         border: 1px solid $white;
                         color: $white;
                         transition: .2s;
+                    }
+
+                    &.active {
+                        &:hover {
+                            color: #000;
+                        }
                     }
                 }
             }

@@ -200,11 +200,13 @@ a {
   }
   header nav .nav-ul li {
     border-bottom: 2px solid transparent;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav .nav-ul li:hover:nth-of-type(1), header nav .nav-ul li:hover:nth-of-type(2), header nav .nav-ul li:hover:nth-of-type(3) {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav .nav-ul li:hover:nth-of-type(1) a, header nav .nav-ul li:hover:nth-of-type(2) a, header nav .nav-ul li:hover:nth-of-type(3) a {
     color: #d2d8f9;
@@ -447,12 +449,17 @@ main .launchSlide .text_container p {
     width: 60px;
     height: 60px;
     font-size: 1.25rem;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   main .desktop_column .dots .launchButton:hover {
     border: 1px solid white;
     color: white;
     -webkit-transition: .2s;
     transition: .2s;
+  }
+  main .desktop_column .dots .launchButton.active:hover {
+    color: #000;
   }
   main .desktop_column .launchSlide {
     -webkit-box-orient: horizontal;
