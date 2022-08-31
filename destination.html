@@ -25,12 +25,12 @@
     <main>
         <h2><span>01</span>PICK YOUR DESTINATION</h2>
         <div class="buttons_container">
-            <span class="destButton" role="button" aria-label="information about the Moon" onclick="destCurrentSlide(1)">MOON</span>
-            <span class="destButton" role="button" aria-label="information about Mars" onclick="destCurrentSlide(2)">MARS</span>
-            <span class="destButton" role="button" aria-label="information about Europa" onclick="destCurrentSlide(3)">EUROPA</span>
-            <span class="destButton" role="button" aria-label="information about Titan" onclick="destCurrentSlide(4)">TITAN</span>
+            <span class="destButton" role="button" aria-label="information about the Moon" onclick="destCurrentSlide(1)" aria-controls="moon-tab" id="moon">MOON</span>
+            <span class="destButton" role="button" aria-label="information about Mars" onclick="destCurrentSlide(2)" aria-controls="mars-tab" id="mars">MARS</span>
+            <span class="destButton" role="button" aria-label="information about Europa" onclick="destCurrentSlide(3)" aria-controls="europa-tab" id="europa">EUROPA</span>
+            <span class="destButton" role="button" aria-label="information about Titan" onclick="destCurrentSlide(4)" aria-controls="titan-tab" id="titan">TITAN</span>
         </div>
-        <section class="destinationSlide fade">
+        <section class="destinationSlide fade" id="moon-tab" aria-labelledby="moon">
             <img class="rotate" src="starter-code/assets/destination/image-moon.webp" alt="moon">
             <div class="desktop_column">
                 <div class="text_container">
@@ -53,7 +53,7 @@
             </div>
         </section>
 
-        <section class="destinationSlide fade">
+        <section class="destinationSlide fade" id="mars-tab" aria-labelledby="mars"> 
             <img class="rotate" src="starter-code/assets/destination/image-mars.webp" alt="mars">
             <div class="desktop_column">
                 <div class="text_container">
@@ -75,7 +75,7 @@
             </div>
         </section>
 
-        <section class="destinationSlide fade">
+        <section class="destinationSlide fade" id="europa-tab" aria-labelledby="europa">
             <img class="rotate" src="starter-code/assets/destination/image-europa.webp" alt="europa">
             <div class="desktop_column">
                 <div class="text_container">
@@ -98,7 +98,7 @@
             </div>
         </section>
 
-        <div class="destinationSlide fade">
+        <div class="destinationSlide fade" id="titan-tab" aria-labelledby="titan">
             <img class="rotate" src="starter-code/assets/destination/image-titan.webp" alt="titan">
             <div class="desktop_column">
                 <div class="text_container">
