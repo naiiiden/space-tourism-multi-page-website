@@ -24,13 +24,13 @@
     </header>
     <main>
         <h2><span>02</span>MEET YOUR CREW</h2>
-        <div class="dots">
-            <span class="dot crewButton" onclick="crewCurrentSlide(1)"></span>
-            <span class="dot crewButton" onclick="crewCurrentSlide(2)"></span>
-            <span class="dot crewButton" onclick="crewCurrentSlide(3)"></span>
-            <span class="dot crewButton" onclick="crewCurrentSlide(4)"></span>
+        <div class="dots" role="tablist">
+            <span class="dot crewButton" onclick="crewCurrentSlide(1)" aria-controls="commander-tab" id="commander"></span>
+            <span class="dot crewButton" onclick="crewCurrentSlide(2)" aria-controls="mission-specialist-tab" id="mission-specialist"></span>
+            <span class="dot crewButton" onclick="crewCurrentSlide(3)" aria-controls="pilot-tab" id="pilot"></span>
+            <span class="dot crewButton" onclick="crewCurrentSlide(4)" aria-cntrols="flight-engineer-tab" id="flight-engineer"></span>
         </div>
-        <section class="crewSlide fade">
+        <section class="crewSlide fade" role="tabpanel" id="commander-tab" aria-labelledby="commander">
             <img src="starter-code/assets/crew/image-douglas-hurley.webp" alt="Commander Douglas Hurley">
             <!-- <div class="dots">
                 <span class="dot crewButton" onclick="crewCurrentSlide(1)"></span>
@@ -46,7 +46,7 @@
             </div>
         </section>
 
-        <section class="crewSlide fade">
+        <section class="crewSlide fade" role="tabpanel" id="mission-specialist-tab" aria-labelledby="mission-specialist">
             <img src="starter-code/assets/crew/image-mark-shuttleworth.webp" alt="Mission Specialist mark Shuttleworth">
             <!-- <div class="dots">
                 <span class="dot crewButton" onclick="crewCurrentSlide(1)"></span>
@@ -62,7 +62,7 @@
             </div>
         </section>
 
-        <section class="crewSlide fade">
+        <section class="crewSlide fade" role="tabpanel" id="pilot-tab" aria-labelledby="pilot">
             <img src="starter-code/assets/crew/image-victor-glover.webp" alt="Pilot Victor Glover">
             <!-- <div class="dots">
                 <span class="dot crewButton" onclick="crewCurrentSlide(1)"></span>
@@ -79,7 +79,7 @@
             </div>
         </section>
 
-        <section class="crewSlide fade">
+        <section class="crewSlide fade" role="tabpanel" id="flight-engineer-tab" aria-labelledby="flight-engineer">
             <img src="starter-code/assets/crew/image-anousheh-ansari.webp" alt="FLIGHT ENGINEER ANOUSHEH ANSARI">
             <!-- <div class="dots">
                 <span class="dot crewButton" onclick="crewCurrentSlide(1)"></span>
