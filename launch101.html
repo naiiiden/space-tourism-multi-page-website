@@ -25,12 +25,12 @@
     <main>
         <h2><span>03</span>SPACE LAUNCH 101</h2>
         <div class="desktop_column">
-            <div class="dots">
-                <span class="dot launchButton" onclick="launchCurrentSlide(1)">1</span>
-                <span class="dot launchButton" onclick="launchCurrentSlide(2)">2</span>
-                <span class="dot launchButton" onclick="launchCurrentSlide(3)">3</span>
+            <div class="dots" role="tablist">
+                <span class="dot launchButton" onclick="launchCurrentSlide(1)" role="button" aria-controls="space-launch-tab" id="space-launch">1</span>
+                <span class="dot launchButton" onclick="launchCurrentSlide(2)" role="button" aria-controls="spaceport-tab" id="spaceport">2</span>
+                <span class="dot launchButton" onclick="launchCurrentSlide(3)" role="button" aria-controls="space-capsule-tab" id="space-capsule">3</span>
             </div>
-            <div class="launchSlide fade">
+            <div class="launchSlide fade" role="tabpanel" id="space-launch-tab" aria-labelledby="space launch">
                 <picture>
                     <source srcset="starter-code/assets/technology/image-launch-vehicle-landscape.jpg" media="(max-width: 1023px)">
                     <img src="starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="a rocket launch">
@@ -43,7 +43,7 @@
                     it's quite an awe-inspiring sight on the launch pad!</p>
                 </div>
             </div>
-            <div class="launchSlide fade">
+            <div class="launchSlide fade" role="tabpanel" id="spaceport-tab" aria-labelledby="spaceport">
                 <picture>
                     <source srcset="starter-code/assets/technology/image-spaceport-landscape.jpg" media="(max-width:1023px)">
                     <img src="starter-code/assets/technology/image-spaceport-portrait.jpg" alt="a space port">
@@ -56,7 +56,7 @@
                     of the Earth’s rotation for launch.</p>
                 </div>
             </div>
-            <div class="launchSlide fade">
+            <div class="launchSlide fade" role="tabpanel" id="space-capsule-tab" aria-labelledby="space-capsule">
                 <picture>
                     <source srcset="starter-code/assets/technology/image-spaceport-landscape.jpg" media="(max-width: 1023px)">
                     <img src="starter-code/assets/technology/image-space-capsule-portrait.jpg" alt="a space capsule">
