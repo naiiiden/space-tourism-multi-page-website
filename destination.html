@@ -25,10 +25,10 @@
     <main>
         <h2><span>01</span>PICK YOUR DESTINATION</h2>
         <div class="buttons_container">
-            <button class="destButton" role="button" aria-label="information about the Moon" onclick="destCurrentSlide(1)" aria-controls="moon-tab" id="moon">MOON</button>
-            <button class="destButton" role="button" aria-label="information about Mars" onclick="destCurrentSlide(2)" aria-controls="mars-tab" id="mars">MARS</button>
-            <button class="destButton" role="button" aria-label="information about Europa" onclick="destCurrentSlide(3)" aria-controls="europa-tab" id="europa">EUROPA</button>
-            <button class="destButton" role="button" aria-label="information about Titan" onclick="destCurrentSlide(4)" aria-controls="titan-tab" id="titan">TITAN</button>
+            <button class="destButton" role="tab" aria-label="information about the Moon" onclick="destCurrentSlide(1)" aria-controls="moon-tab" id="moon">MOON</button>
+            <button class="destButton" role="tab" aria-label="information about Mars" onclick="destCurrentSlide(2)" aria-controls="mars-tab" id="mars">MARS</button>
+            <button class="destButton" role="tab" aria-label="information about Europa" onclick="destCurrentSlide(3)" aria-controls="europa-tab" id="europa">EUROPA</button>
+            <button class="destButton" role="tab" aria-label="information about Titan" onclick="destCurrentSlide(4)" aria-controls="titan-tab" id="titan">TITAN</button>
         </div>
         <section class="destinationSlide fade" role="tabpanel" id="moon-tab" aria-labelledby="moon">
             <img class="rotate" src="starter-code/assets/destination/image-moon.webp" alt="moon">
