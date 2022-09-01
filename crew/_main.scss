@@ -27,8 +27,9 @@ main {
         display: flex;
         gap: 1rem;
         transition: .2s;
-
+        
         .dot {
+            border: none;
             cursor: pointer;
             border-radius: 50%;
             width: 10px;

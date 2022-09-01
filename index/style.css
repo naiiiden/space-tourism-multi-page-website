@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -48,16 +47,14 @@ body {
     background-size: 100% 100%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   body {
     background: url("../starter-code/assets/home/background-home-desktop.jpg") no-repeat;
     background-size: 100% 100%;
   }
 }
-
 a {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-family: Barlow Condensed, sans-serif;
   letter-spacing: 2.7px;
   text-decoration: none;
@@ -66,15 +63,9 @@ a {
 @media screen and (max-width: 767px) {
   header {
     padding: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
   }
   header .hamburger {
     border: none;
@@ -86,21 +77,14 @@ a {
   }
   header nav .nav-ul {
     list-style-type: none;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: fixed;
     z-index: 99;
     right: -999rem;
-    -webkit-transition: right 3s;
     transition: right 3s;
     top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 1.5rem;
     padding: 6rem 0 6rem 2rem;
     width: 15rem;
@@ -110,21 +94,17 @@ a {
             backdrop-filter: blur(2rem);
   }
   header nav .nav-ul li {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
   header nav .nav-ul li:nth-of-type(1) {
-    border-right: 4px solid white;
+    border-right: 4px solid hsl(0deg, 0%, 100%);
   }
   header nav .nav-ul li:nth-of-type(2) span {
     letter-spacing: 4px;
   }
   header nav .nav-ul a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 1rem;
   }
   header nav .nav-ul a span {
@@ -132,22 +112,14 @@ a {
   }
   header nav .nav-ul.show {
     right: 0;
-    -webkit-transition: .3s;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
-
 @media screen and (min-width: 768px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     z-index: 99;
   }
   header .logo {
@@ -162,23 +134,16 @@ a {
     -webkit-backdrop-filter: blur(2rem);
             backdrop-filter: blur(2rem);
     padding: 0 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
   header nav .nav-ul li:nth-of-type(1) {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid hsl(0deg, 0%, 100%);
   }
   header nav .nav-ul a {
     height: 69px;
-    display: -ms-grid;
     display: grid;
     place-content: center;
   }
@@ -186,7 +151,6 @@ a {
     display: none;
   }
 }
-
 @media screen and (min-width: 1024px) {
   header .logo {
     padding: 3rem;
@@ -198,96 +162,64 @@ a {
   }
   header nav .nav-ul li {
     border-bottom: 2px solid transparent;
-    -webkit-transition: .2s;
-    transition: .2s;
+    transition: 0.2s;
   }
   header nav .nav-ul li:hover:nth-of-type(n+2) {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    -webkit-transition: .2s;
-    transition: .2s;
+    transition: 0.2s;
   }
   header nav .nav-ul li:hover:nth-of-type(n+2) a {
-    color: #d2d8f9;
+    color: hsl(231deg, 76%, 90%);
   }
   header nav .nav-ul a {
     height: 80px;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: .5rem;
+    align-items: center;
+    gap: 0.5rem;
   }
   header nav .nav-ul a span {
     display: block;
     font-weight: 700;
   }
 }
-
 main {
   padding: 0 1.5rem;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 80vh;
 }
-
 main .vertical_align {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
-
 main .text_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
-
 main h1 {
   font-size: 80px;
   font-weight: 400;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
-
 main h1 span {
   font-size: 1rem;
   font-family: Barlow Condensed, sans-serif;
   letter-spacing: 2.7px;
   font-weight: 400;
-  color: #d2d8f9;
+  color: hsl(231deg, 76%, 90%);
 }
-
 main p {
   font-family: Barlow Condensed, sans-serif;
-  color: #d2d8f9;
+  color: hsl(231deg, 76%, 90%);
   font-size: 15px;
   line-height: 25px;
 }
-
 main .explore {
   margin-top: 1.5rem;
   border: none;
@@ -314,9 +246,7 @@ main .explore {
     width: 440px;
   }
   main .text_container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   main .button_hover {
     margin-top: 3rem;
@@ -325,44 +255,28 @@ main .explore {
     margin-top: 0;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main {
     text-align: start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
   }
   main .vertical_align {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   main h1 {
     line-height: 171.9px;
   }
   main h1 span {
-    margin-left: .75rem;
+    margin-left: 0.75rem;
     font-size: 28px;
     letter-spacing: 4.72px;
   }
@@ -379,23 +293,19 @@ main .explore {
   }
   main .button_hover {
     align-self: flex-end;
-    display: -ms-grid;
     display: grid;
     place-content: center;
     border: 1px solid transparent;
     border-radius: 50%;
     width: 375px;
     height: 375px;
-    -webkit-transition: .2s;
-    transition: .2s;
+    transition: 0.2s;
   }
   main .button_hover:hover {
     background: rgba(71, 71, 71, 0.25);
     mix-blend-mode: normal;
     -webkit-backdrop-filter: blur(0.5rem);
             backdrop-filter: blur(0.5rem);
-    -webkit-transition: .2s;
-    transition: .2s;
+    transition: 0.2s;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
