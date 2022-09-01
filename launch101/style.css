@@ -220,6 +220,7 @@ main .desktop_column .dots {
   gap: 1rem;
 }
 main .desktop_column .dots .launchButton {
+  background: none;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   width: 40px;
