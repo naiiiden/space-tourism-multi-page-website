@@ -85,32 +85,6 @@ main {
             gap: .5rem;
         }
 
-        // .buttons_container {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     gap: 1rem;
-
-        //     span {
-        //         font-family: Barlow Condensed, sans-serif;
-        //         font-size: 14px;
-        //         letter-spacing: 2.36px;
-        //         line-height: 16.8px;
-        //         color: $light-gray;
-
-        //         padding: 1rem 0;
-        //         border-bottom: 3px solid transparent;
-
-        //         &.active {
-        //             border-bottom: 3px solid $white;
-        //         }
-
-        //         &:hover {
-        //             border-bottom: 3px solid $light-gray;
-        //         }
-        //     }
-        // }
-
         .text_container {
             display: flex;
             flex-direction: column;
@@ -201,16 +175,6 @@ main {
                 width: 300px;
             }
 
-            // .buttons_container {
-            //     gap: 2rem;
-
-            //     span {
-            //         font-size: 16px;
-            //         line-height: 19.2px;
-            //         letter-spacing: 2.7px;
-            //     }
-            // }
-
             .text_container {
                 padding-bottom: 2rem;
 
@@ -270,17 +234,6 @@ main {
             img {
                 width: 350px;
             }
-
-            // .buttons_container {
-            //     margin-left: .5rem;
-            //     align-self: flex-start;
-                
-            //     span {
-            //         font-size: 16px;
-            //         line-height: 19.2px;
-            //         letter-spacing: 2.7px;
-            //     }
-            // }
 
             .text_container {
                 h1 {
