@@ -246,6 +246,10 @@ main .destinationSlide {
 }
 main .destinationSlide img {
   width: 275px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 main .destinationSlide .rotate {
   -webkit-animation: rotation 540s infinite linear;
