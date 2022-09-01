@@ -29,7 +29,9 @@ main {
         align-items: center;
         gap: 1rem;
 
-        span {
+        button, span {
+            background: none;
+            border: none;
             font-family: Barlow Condensed, sans-serif;
             font-size: 14px;
             letter-spacing: 2.36px;
@@ -183,7 +185,7 @@ main {
         .buttons_container {
             gap: 2rem;
 
-            span {
+            button, span {
                 font-size: 16px;
                 line-height: 19.2px;
                 letter-spacing: 2.7px;
@@ -252,7 +254,7 @@ main {
         }
 
         .buttons_container {
-            span {
+            button, span {
                 font-size: 16px;
                 line-height: 19.2px;
                 letter-spacing: 2.7px;

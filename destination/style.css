@@ -217,7 +217,9 @@ main .buttons_container {
   align-items: center;
   gap: 1rem;
 }
-main .buttons_container span {
+main .buttons_container button, main .buttons_container span {
+  background: none;
+  border: none;
   font-family: Barlow Condensed, sans-serif;
   font-size: 14px;
   letter-spacing: 2.36px;
@@ -227,11 +229,11 @@ main .buttons_container span {
   border-bottom: 3px solid transparent;
   transition: 0.2s;
 }
-main .buttons_container span.active {
+main .buttons_container button.active, main .buttons_container span.active {
   border-bottom: 3px solid hsl(0deg, 0%, 100%);
   transition: 0.2s;
 }
-main .buttons_container span:hover {
+main .buttons_container button:hover, main .buttons_container span:hover {
   border-bottom: 3px solid hsl(231deg, 76%, 90%);
   transition: 0.2s;
 }
@@ -345,7 +347,7 @@ main .destinationSlide .information_container .information .value {
   main .buttons_container {
     gap: 2rem;
   }
-  main .buttons_container span {
+  main .buttons_container button, main .buttons_container span {
     font-size: 16px;
     line-height: 19.2px;
     letter-spacing: 2.7px;
@@ -389,7 +391,7 @@ main .destinationSlide .information_container .information .value {
   main h2 span {
     padding-right: 1rem;
   }
-  main .buttons_container span {
+  main .buttons_container button, main .buttons_container span {
     font-size: 16px;
     line-height: 19.2px;
     letter-spacing: 2.7px;
