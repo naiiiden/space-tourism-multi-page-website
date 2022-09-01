@@ -242,6 +242,10 @@ main .crewSlide img {
   width: 270px;
   height: 368px;
   border-bottom: 1px solid #383b4b;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 main .crewSlide .text_container {
   display: flex;
