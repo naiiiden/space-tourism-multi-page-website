@@ -59,6 +59,19 @@ a {
   letter-spacing: 2.7px;
   text-decoration: none;
 }
+a.skip--link {
+  background-color: hsl(0deg, 0%, 100%);
+  color: #000;
+  font-size: 1.125rem;
+  padding: 0.25rem;
+  position: absolute;
+  left: -500px;
+  transition: 0.2s;
+}
+a.skip--link:focus {
+  left: 0;
+  transition: 0.2s;
+}
 
 @media screen and (max-width: 767px) {
   header {
