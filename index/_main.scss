@@ -52,6 +52,7 @@ main {
 
         &:focus {
             outline: 5px dashed $light-gray;
+            outline-offset: 3px;
         }
     }
 }
