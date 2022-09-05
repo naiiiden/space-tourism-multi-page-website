@@ -249,6 +249,10 @@ main .desktop_column .dots .launchButton {
   line-height: 18.34px;
   color: hsl(0deg, 0%, 100%);
 }
+main .desktop_column .dots .launchButton:focus {
+  outline: 1px solid #eee;
+  outline-offset: 3px;
+}
 main .desktop_column .dots .active {
   background: hsl(0deg, 0%, 100%);
   color: #000;

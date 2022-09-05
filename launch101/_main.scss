@@ -47,6 +47,11 @@ main {
                 font-size: 16px;
                 line-height: 18.34px;
                 color: $white;
+
+                &:focus {
+                    outline: 1px solid #eee;
+                    outline-offset: 3px;
+                }
             }
 
             .active {
