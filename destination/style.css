@@ -72,12 +72,6 @@ a.skip--link:focus {
   transition: 0.2s;
 }
 
-.logo--link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media screen and (max-width: 767px) {
   header {
     padding: 1.5rem;
