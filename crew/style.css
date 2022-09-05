@@ -205,7 +205,7 @@ main {
   flex-direction: column;
   gap: 2rem;
 }
-main h2 {
+main h1 {
   font-family: Barlow Condensed;
   font-weight: 400;
   font-size: 1rem;
@@ -213,7 +213,7 @@ main h2 {
   letter-spacing: 2.7px;
   line-height: 19.2px;
 }
-main h2 span {
+main h1 span {
   padding-right: 0.5rem;
   font-family: Barlow Condensed, sans-serif;
   font-weight: 700;
@@ -265,13 +265,13 @@ main .crewSlide .text_container {
   flex-direction: column;
   gap: 2rem;
 }
-main .crewSlide .text_container h1 {
+main .crewSlide .text_container h2 {
   color: hsl(0deg, 0%, 100%);
   font-size: 24px;
   font-weight: 400;
   line-height: 33.34px;
 }
-main .crewSlide .text_container h1 span {
+main .crewSlide .text_container h2 span {
   font-size: 16px;
   opacity: 0.5;
 }
@@ -311,7 +311,7 @@ main .crewSlide .text_container p {
   main .dots {
     margin-top: 0.75rem;
   }
-  main h2 {
+  main h1 {
     font-size: 20px;
   }
   main .crewSlide img {
@@ -326,11 +326,11 @@ main .crewSlide .text_container p {
   main .crewSlide .text_container {
     gap: 0;
   }
-  main .crewSlide .text_container h1 {
+  main .crewSlide .text_container h2 {
     font-size: 40px;
     line-height: 55.84px;
   }
-  main .crewSlide .text_container h1 span {
+  main .crewSlide .text_container h2 span {
     font-size: 24px;
     line-height: 27.5px;
   }
@@ -341,7 +341,7 @@ main .crewSlide .text_container p {
   }
 }
 @media screen and (min-width: 1024px) {
-  main h2 {
+  main h1 {
     z-index: 99;
     font-size: 28px;
     line-height: 33.6px;
@@ -366,11 +366,11 @@ main .crewSlide .text_container p {
     position: relative;
     z-index: 2;
   }
-  main .crewSlide .text_container h1 {
+  main .crewSlide .text_container h2 {
     font-size: 56px;
     line-height: 64.18px;
   }
-  main .crewSlide .text_container h1 span {
+  main .crewSlide .text_container h2 span {
     font-size: 32px;
     line-height: 36.67px;
   }

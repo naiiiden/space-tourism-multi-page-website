@@ -5,7 +5,7 @@ main {
     flex-direction: column;
     gap: 2rem;
 
-    h2 {
+    h1 {
         span {
             padding-right: .5rem;
             font-family: Barlow Condensed, sans-serif;
@@ -69,7 +69,7 @@ main {
             flex-direction: column;
             gap: 2rem;
 
-            h1 {
+            h2 {
                 span {
                     font-size: 16px;
                     opacity: .5;
@@ -109,7 +109,7 @@ main {
             margin-top: .75rem;
         }
 
-        h2 {
+        h1 {
             font-size: 20px;
         }
 
@@ -127,7 +127,7 @@ main {
             .text_container {
                 gap: 0;
 
-                h1 {
+                h2 {
                     span {
                         font-size: 24px;
                         line-height: 27.5px;
@@ -150,7 +150,7 @@ main {
 
 @media screen and (min-width: 1024px) {
     main {
-        h2 {
+        h1 {
             z-index: 99;
             font-size: 28px;
             line-height: 33.6px;
@@ -177,7 +177,7 @@ main {
                 position: relative;
                 z-index: 2;
 
-                h1 {
+                h2 {
                     span {
                         font-size: 32px;
                         line-height: 36.67px;
