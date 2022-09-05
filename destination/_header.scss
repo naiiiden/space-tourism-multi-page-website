@@ -3,6 +3,21 @@ a {
     font-family: Barlow Condensed, sans-serif;
     letter-spacing: 2.7px;
     text-decoration: none;
+    
+    &.skip--link {
+        background-color: $white;
+        color: #000;
+        font-size: 1.125rem;
+        padding: .25rem;
+        position: absolute;
+        left: -500px;
+        transition: .2s;
+
+        &:focus {
+            left: 0;
+            transition: .2s;
+        }
+    }
 }
 
 .logo--link {
