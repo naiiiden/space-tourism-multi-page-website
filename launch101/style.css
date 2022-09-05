@@ -205,7 +205,7 @@ main {
   flex-direction: column;
   gap: 2rem;
 }
-main h2 {
+main h1 {
   font-family: Barlow Condensed;
   font-weight: 400;
   font-size: 1rem;
@@ -213,7 +213,7 @@ main h2 {
   letter-spacing: 2.7px;
   line-height: 19.2px;
 }
-main h2 span {
+main h1 span {
   padding-right: 0.5rem;
   font-family: Barlow Condensed, sans-serif;
   font-weight: 700;
@@ -265,14 +265,14 @@ main .launchSlide .text_container {
   flex-direction: column;
   gap: 1.5rem;
 }
-main .launchSlide .text_container h1 {
+main .launchSlide .text_container h2 {
   padding: 0 1.5rem;
   color: hsl(0deg, 0%, 100%);
   font-size: 24px;
   line-height: 37.5px;
   font-weight: 400;
 }
-main .launchSlide .text_container h1 span {
+main .launchSlide .text_container h2 span {
   font-family: Barlow Condensed, sans-serif;
   color: hsl(231deg, 76%, 90%);
   font-size: 14px;
@@ -312,7 +312,7 @@ main .launchSlide .text_container p {
   main {
     padding: 3rem 0;
   }
-  main h2 {
+  main h1 {
     font-size: 20px;
   }
   main .launchSlide {
@@ -324,11 +324,11 @@ main .launchSlide .text_container p {
   main .launchSlide .text_container {
     align-items: center;
   }
-  main .launchSlide .text_container h1 {
+  main .launchSlide .text_container h2 {
     font-size: 40px;
     line-height: 45.84px;
   }
-  main .launchSlide .text_container h1 span {
+  main .launchSlide .text_container h2 span {
     font-size: 16px;
     letter-spacing: 2.7px;
     line-height: 55px;
@@ -347,7 +347,7 @@ main .launchSlide .text_container p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  main h2 {
+  main h1 {
     font-size: 28px;
     line-height: 33.6px;
     letter-spacing: 4.72px;
@@ -388,13 +388,13 @@ main .launchSlide .text_container p {
     width: 515px;
     height: 527px;
   }
-  main .desktop_column .launchSlide h1 {
+  main .desktop_column .launchSlide h2 {
     text-align: start;
     padding: 0;
     font-size: 56px;
     line-height: 64.18px;
   }
-  main .desktop_column .launchSlide h1 span {
+  main .desktop_column .launchSlide h2 span {
     margin-left: 0.25rem;
     font-size: 16px;
   }
