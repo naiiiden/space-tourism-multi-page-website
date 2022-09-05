@@ -239,6 +239,10 @@ main .dots .dot {
   opacity: 0.17;
   transition: 0.2s;
 }
+main .dots .dot:focus {
+  outline: 2px solid hsl(231deg, 76%, 90%);
+  outline-offset: 1px;
+}
 main .dots .dot:hover {
   opacity: 0.4;
   transition: 0.2s;

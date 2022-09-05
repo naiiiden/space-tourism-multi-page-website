@@ -38,6 +38,11 @@ main {
             opacity: .17;
             transition: .2s;
 
+            &:focus {
+                outline: 2px solid $light-gray;
+                outline-offset: 1px;
+            }
+
             &:hover {
                 opacity: .4;
                 transition: .2s;
