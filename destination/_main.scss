@@ -41,6 +41,10 @@ main {
             border-bottom: 3px solid transparent;
             transition: .2s;
 
+            &:focus {
+                outline: 2px dashed #eee;
+            }
+
             &.active {
                 border-bottom: 3px solid $white;
                 transition: .2s;

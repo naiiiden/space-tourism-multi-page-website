@@ -245,6 +245,9 @@ main .buttons_container button, main .buttons_container span {
   border-bottom: 3px solid transparent;
   transition: 0.2s;
 }
+main .buttons_container button:focus, main .buttons_container span:focus {
+  outline: 2px dashed #eee;
+}
 main .buttons_container button.active, main .buttons_container span.active {
   border-bottom: 3px solid hsl(0deg, 0%, 100%);
   transition: 0.2s;
