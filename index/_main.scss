@@ -49,6 +49,10 @@ main {
         font-family: Bellefair, sans-serif;
         font-size: 20px;
         letter-spacing: 1.25px;
+
+        &:focus {
+            outline: 5px dashed $light-gray;
+        }
     }
 }
 
