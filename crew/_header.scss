@@ -3,7 +3,11 @@ a {
     font-family: Barlow Condensed, sans-serif;
     letter-spacing: 2.7px;
     text-decoration: none;
-
+    
+    &:focus {
+        outline: 2px dashed #eee;
+    }
+    
     &.skip--link {
         background-color: $white;
         color: #000;
