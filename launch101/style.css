@@ -8,6 +8,8 @@
 body {
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -348,11 +350,8 @@ main .launchSlide .text_container p {
 @media screen and (min-width: 1024px) {
   main {
     padding: 3rem;
-    position: absolute;
+    margin: auto 0;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   main h1 {
     font-size: 28px;
