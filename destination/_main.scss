@@ -41,7 +41,7 @@ main {
             border-bottom: 3px solid transparent;
             transition: .2s;
 
-            &:focus {
+            &:focus-visible {
                 outline: 2px dashed #eee;
             }
 
