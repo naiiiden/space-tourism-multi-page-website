@@ -48,7 +48,7 @@ main {
                 line-height: 18.34px;
                 color: $white;
 
-                &:focus {
+                &:focus-visible {
                     outline: 1px solid #eee;
                     outline-offset: 3px;
                 }
