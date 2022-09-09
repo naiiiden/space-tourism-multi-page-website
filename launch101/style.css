@@ -60,7 +60,7 @@ a {
   letter-spacing: 2.7px;
   text-decoration: none;
 }
-a:focus {
+a:focus-visible {
   outline: 2px dashed #eee;
 }
 a.skip--link {
@@ -72,7 +72,7 @@ a.skip--link {
   left: -500px;
   transition: 0.2s;
 }
-a.skip--link:focus {
+a.skip--link:focus-visible {
   left: 0;
   transition: 0.2s;
 }
