@@ -50,7 +50,7 @@ main {
         font-size: 20px;
         letter-spacing: 1.25px;
 
-        &:focus {
+        &:focus-visible {
             outline: 5px dashed $light-gray;
             outline-offset: 3px;
         }

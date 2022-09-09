@@ -248,7 +248,7 @@ main .explore {
   font-size: 20px;
   letter-spacing: 1.25px;
 }
-main .explore:focus {
+main .explore:focus-visible {
   outline: 5px dashed hsl(231deg, 76%, 90%);
   outline-offset: 3px;
 }
