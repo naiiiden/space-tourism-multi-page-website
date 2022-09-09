@@ -38,7 +38,7 @@ main {
             opacity: .17;
             transition: .2s;
 
-            &:focus {
+            &:focus-visible {
                 outline: 2px solid $light-gray;
                 outline-offset: 1px;
             }
