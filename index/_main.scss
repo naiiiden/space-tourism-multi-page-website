@@ -28,7 +28,7 @@ main {
             color: $light-gray;
         }
 
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 400;
         color: $white;
     }
@@ -36,8 +36,8 @@ main {
     p {
         font-family: Barlow Condensed, sans-serif;
         color: $light-gray;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 0.938rem;
+        line-height: 1.563rem;
     }
 
     .explore {
@@ -47,7 +47,7 @@ main {
         width: 150px;
         height: 150px;
         font-family: Bellefair, sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         letter-spacing: 1.25px;
 
         &:focus-visible {
@@ -63,14 +63,14 @@ main {
 
         h1 {
             span {
-                font-size: 20px;
+                font-size: 1.25rem;
             }
 
-            font-size: 150px;
+            font-size: 9.375rem;
         }
 
         p {
-            line-height: 28px;
+            line-height: 1.75rem;
             width: 440px;
         }
 
@@ -106,16 +106,16 @@ main {
         h1 {
             span {
                 margin-left: .75rem;
-                font-size: 28px;
+                font-size: 1.75rem;
                 letter-spacing: 4.72px;
             }
 
-            line-height: 171.9px;
+            line-height: 10.744rem;
         }
 
         p {
-            font-size: 18px;
-            line-height: 32px;
+            font-size: 1.125rem;
+            line-height: 2rem;
         }
 
         .explore {
@@ -123,7 +123,7 @@ main {
             display: block;
             width: 274px;
             height: 274px;
-            font-size: 32px;
+            font-size: 2rem;
         }
 
         .button_hover {
