@@ -217,7 +217,7 @@ main .main--heading {
   font-size: 1rem;
   color: hsl(0deg, 0%, 100%);
   letter-spacing: 2.7px;
-  line-height: 19.2px;
+  line-height: 1.2rem;
 }
 main .main--heading span {
   padding-right: 0.5rem;
@@ -237,9 +237,9 @@ main .buttons_container button, main .buttons_container span {
   background: none;
   border: none;
   font-family: Barlow Condensed, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 2.36px;
-  line-height: 16.8px;
+  line-height: 1.05rem;
   color: hsl(231deg, 76%, 90%);
   padding: 1rem 0;
   border-bottom: 3px solid transparent;
@@ -301,16 +301,16 @@ main .destinationSlide .text_container {
   padding-bottom: 1rem;
 }
 main .destinationSlide .text_container h2 {
-  font-size: 56px;
-  line-height: 64.18px;
+  font-size: 3.5rem;
+  line-height: 4.011rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 100%);
 }
 main .destinationSlide .text_container p {
   color: hsl(231deg, 76%, 90%);
   font-family: Barlow Condensed, sans-serif;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
 }
 main .destinationSlide .information_container {
   border-top: 1px solid #383b4b;
@@ -327,15 +327,15 @@ main .destinationSlide .information_container .information {
 main .destinationSlide .information_container .information .distance_time {
   color: hsl(231deg, 76%, 90%);
   font-family: Barlow Condensed, sans-serif;
-  font-size: 14px;
-  line-height: 16.8px;
+  font-size: 0.875rem;
+  line-height: 1.05rem;
   letter-spacing: 2.36px;
 }
 main .destinationSlide .information_container .information .value {
   color: hsl(0deg, 0%, 100%);
   font-family: Bellefair, sans-serif;
-  font-size: 28px;
-  line-height: 32.09px;
+  font-size: 1.75rem;
+  line-height: 2.006rem;
   font-weight: 400;
 }
 
@@ -372,8 +372,8 @@ main .destinationSlide .information_container .information .value {
     gap: 2rem;
   }
   main .buttons_container button, main .buttons_container span {
-    font-size: 16px;
-    line-height: 19.2px;
+    font-size: 1rem;
+    line-height: 1.2rem;
     letter-spacing: 2.7px;
     cursor: pointer;
   }
@@ -387,12 +387,12 @@ main .destinationSlide .information_container .information .value {
     padding-bottom: 2rem;
   }
   main .destinationSlide .text_container h2 {
-    font-size: 80px;
-    line-height: 91.68px;
+    font-size: 5rem;
+    line-height: 5.73rem;
   }
   main .destinationSlide .text_container p {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
     width: 573px;
     letter-spacing: 1px;
   }
@@ -408,16 +408,16 @@ main .destinationSlide .information_container .information .value {
 @media screen and (min-width: 1024px) {
   main .main--heading {
     text-align: center;
-    font-size: 28px;
-    line-height: 33.6px;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
     letter-spacing: 4.72px;
   }
   main .main--heading span {
     padding-right: 1rem;
   }
   main .buttons_container button, main .buttons_container span {
-    font-size: 16px;
-    line-height: 19.2px;
+    font-size: 1rem;
+    line-height: 1.2rem;
     letter-spacing: 2.7px;
   }
   main .destinationSlide {
@@ -429,12 +429,12 @@ main .destinationSlide .information_container .information .value {
     width: 350px;
   }
   main .destinationSlide .text_container h2 {
-    font-size: 100px;
-    line-height: 114.6px;
+    font-size: 6.25rem;
+    line-height: 7.163rem;
   }
   main .destinationSlide .text_container p {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.125rem;
+    line-height: 2rem;
   }
   main .destinationSlide .information_container {
     justify-content: flex-start;
