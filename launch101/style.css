@@ -216,7 +216,7 @@ main h1 {
   font-size: 1rem;
   color: hsl(0deg, 0%, 100%);
   letter-spacing: 2.7px;
-  line-height: 19.2px;
+  line-height: 1.2rem;
 }
 main h1 span {
   padding-right: 0.5rem;
@@ -247,8 +247,8 @@ main .desktop_column .dots .launchButton {
   place-content: center;
   cursor: pointer;
   font-family: Bellefair, sans-serif;
-  font-size: 16px;
-  line-height: 18.34px;
+  font-size: 1rem;
+  line-height: 1.146rem;
   color: hsl(0deg, 0%, 100%);
 }
 main .desktop_column .dots .launchButton:focus-visible {
@@ -277,22 +277,22 @@ main .launchSlide .text_container {
 main .launchSlide .text_container h2 {
   padding: 0 1.5rem;
   color: hsl(0deg, 0%, 100%);
-  font-size: 24px;
-  line-height: 37.5px;
+  font-size: 1.5rem;
+  line-height: 2.344rem;
   font-weight: 400;
 }
 main .launchSlide .text_container h2 span {
   font-family: Barlow Condensed, sans-serif;
   color: hsl(231deg, 76%, 90%);
-  font-size: 14px;
-  line-height: 26.8px;
+  font-size: 0.875rem;
+  line-height: 1.675rem;
   letter-spacing: 2.36px;
 }
 main .launchSlide .text_container p {
   padding: 0 1.5rem;
-  font-size: 16px;
+  font-size: 1rem;
   color: hsl(231deg, 76%, 90%);
-  line-height: 25px;
+  line-height: 1.563rem;
   font-family: Barlow Condensed, sans-serif;
 }
 
@@ -322,7 +322,7 @@ main .launchSlide .text_container p {
     padding: 3rem 0;
   }
   main h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   main .launchSlide {
     gap: 2rem;
@@ -334,16 +334,16 @@ main .launchSlide .text_container p {
     align-items: center;
   }
   main .launchSlide .text_container h2 {
-    font-size: 40px;
-    line-height: 45.84px;
+    font-size: 2.5rem;
+    line-height: 2.865rem;
   }
   main .launchSlide .text_container h2 span {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2.7px;
-    line-height: 55px;
+    line-height: 3.438rem;
   }
   main .launchSlide .text_container p {
-    line-height: 28px;
+    line-height: 1.75rem;
     width: 458px;
   }
 }
@@ -354,8 +354,8 @@ main .launchSlide .text_container p {
     width: 100%;
   }
   main h1 {
-    font-size: 28px;
-    line-height: 33.6px;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
     letter-spacing: 4.72px;
   }
   main .desktop_column {
@@ -397,16 +397,16 @@ main .launchSlide .text_container p {
   main .desktop_column .launchSlide h2 {
     text-align: start;
     padding: 0;
-    font-size: 56px;
-    line-height: 64.18px;
+    font-size: 3.5rem;
+    line-height: 4.011rem;
   }
   main .desktop_column .launchSlide h2 span {
     margin-left: 0.25rem;
-    font-size: 16px;
+    font-size: 1rem;
   }
   main .desktop_column .launchSlide p {
     padding: 0;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.125rem;
+    line-height: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

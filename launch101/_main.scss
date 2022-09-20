@@ -19,7 +19,7 @@ main {
         font-size: 1rem;
         color: $white;
         letter-spacing: 2.7px;
-        line-height: 19.2px;
+        line-height: 1.2rem;
     }
 
     .desktop_column {
@@ -44,8 +44,8 @@ main {
                 place-content: center;
                 cursor: pointer;
                 font-family: Bellefair, sans-serif;
-                font-size: 16px;
-                line-height: 18.34px;
+                font-size: 1rem;
+                line-height: 1.146rem;
                 color: $white;
 
                 &:focus-visible {
@@ -83,23 +83,23 @@ main {
                 span {
                     font-family: Barlow Condensed, sans-serif;
                     color: $light-gray;
-                    font-size: 14px;
-                    line-height: 26.8px;
+                    font-size: 0.875rem;
+                    line-height: 1.675rem;
                     letter-spacing: 2.36px;
                 }
     
                 padding: 0 1.5rem;
                 color: $white;
-                font-size: 24px;
-                line-height: 37.5px;
+                font-size: 1.5rem;
+                line-height: 2.344rem;
                 font-weight: 400;
             }
     
             p {
                 padding: 0 1.5rem;
-                font-size: 16px;
+                font-size: 1rem;
                 color: $light-gray;
-                line-height: 25px;
+                line-height: 1.563rem;
                 font-family: Barlow Condensed, sans-serif;
             }
         }
@@ -121,7 +121,7 @@ main {
         padding: 3rem 0;
 
         h1 {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         
         .launchSlide {
@@ -138,17 +138,17 @@ main {
 
                 h2 {
                     span {
-                        font-size: 16px;
+                        font-size: 1rem;
                         letter-spacing: 2.7px;
-                        line-height: 55px;
+                        line-height: 3.438rem;
                     }
 
-                    font-size: 40px;
-                    line-height: 45.84px;
+                    font-size: 2.5rem;
+                    line-height: 2.865rem;
                 }
 
                 p {
-                    line-height: 28px;
+                    line-height: 1.75rem;
                     width: 458px;
                 }
             }
@@ -163,8 +163,8 @@ main {
         width: 100%;
 
         h1 {
-            font-size: 28px;
-            line-height: 33.6px;
+            font-size: 1.75rem;
+            line-height: 2.1rem;
             letter-spacing: 4.72px;
         }
 
@@ -220,17 +220,17 @@ main {
 
                     span {
                         margin-left: .25rem;
-                        font-size: 16px;
+                        font-size: 1rem;
                     }
 
-                    font-size: 56px;
-                    line-height: 64.18px;
+                    font-size: 3.5rem;
+                    line-height: 4.011rem;
                 }
 
                 p {
                     padding: 0;
-                    font-size: 18px;
-                    line-height: 32px;
+                    font-size: 1.125rem;
+                    line-height: 2rem;
                 }
             }
         }
