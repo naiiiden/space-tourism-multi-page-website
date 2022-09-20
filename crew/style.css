@@ -274,7 +274,7 @@ main .crewSlide .text_container {
 }
 main .crewSlide .text_container h2 {
   color: hsl(0deg, 0%, 100%);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 33.34px;
 }
@@ -285,7 +285,7 @@ main .crewSlide .text_container h2 span {
 main .crewSlide .text_container p {
   color: hsl(231deg, 76%, 90%);
   font-family: Barlow Condensed, sans-serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   line-height: 25px;
 }
 
@@ -319,7 +319,7 @@ main .crewSlide .text_container p {
     margin-top: 0.75rem;
   }
   main h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   main .crewSlide img {
     z-index: -1;
@@ -334,15 +334,15 @@ main .crewSlide .text_container p {
     gap: 0;
   }
   main .crewSlide .text_container h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 55.84px;
   }
   main .crewSlide .text_container h2 span {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 27.5px;
   }
   main .crewSlide .text_container p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 28px;
     width: 458px;
   }
@@ -350,7 +350,7 @@ main .crewSlide .text_container p {
 @media screen and (min-width: 1024px) {
   main h1 {
     z-index: 99;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 33.6px;
     letter-spacing: 4.72px;
   }
@@ -374,15 +374,15 @@ main .crewSlide .text_container p {
     z-index: 2;
   }
   main .crewSlide .text_container h2 {
-    font-size: 56px;
+    font-size: 3.5rem;
     line-height: 64.18px;
   }
   main .crewSlide .text_container h2 span {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 36.67px;
   }
   main .crewSlide .text_container p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 32px;
     width: 444px;
   }
